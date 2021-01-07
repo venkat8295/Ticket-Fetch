@@ -97,7 +97,7 @@ const displayTickets = (companyData, apikey, subdomain, rec) => {
 				.catch((err) => {
 					appendData += `<div class="row top5 inner-end"><div class="flx">
                     <div class="col-sm-3"></div>
-                    <div class="col-sm-6">${rec}:
+                    <div class="col-sm-6">
                     <h2> <b>${companyData.data.results[rec].subject}</b></h2><br/>
                     <h4>${companyData.data.results[rec].description_text}</h4><br/>
                     <p><b>Ticket ID </b>: ${companyData.data.results[rec].id}&nbsp &nbsp &nbsp<b>Name </b>: Not Available! &nbsp &nbsp &nbsp<b>Status</b> : ${status_check}&nbsp &nbsp &nbsp<b>Type </b>: ${companyData.data.results[rec].type}</p>
